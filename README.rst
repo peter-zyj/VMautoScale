@@ -1,5 +1,6 @@
-======
-Usage
-======
-VM candidate creation::
- ./COStemplate6-centos6.ps1 -build 3.15.0-b296 -ver virt
+========
+Required
+========
+VMware vSphere API Python Bindings
+installation::
+    pip install pyvmomi
