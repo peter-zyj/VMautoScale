@@ -1,29 +1,27 @@
 =====
 Usage
 =====
+
 VM candidate creation::
+
     [powershell] ./COStemplate6-centos6.ps1 -build 3.15.0-b296 -ver virt
-
-VM scale Automation(based on the VM candidate)::
-    python vmAutoScale.py -f config.yaml [-n seconds]
-
-
 
 ========
 Required
 ========
+
 VMware vSphere API Python Bindings
+
 installation::
+
     pip install pyvmomi
-
-
-
 
 ================
 Setting/Execution
 ================
 
 1. Prepare the VMCandidate creation by define the parameters within the powershell scripts::
+
    [string]$ver="orig-full",
    [Parameter(Mandatory=$true)][string]$build,
    [string]$user = "root",
@@ -36,9 +34,11 @@ Setting/Execution
    [string]$vPassword = "Vmware123!"
 
 2. Execute the powershell scripts to create the candidate::
+
     ./COStemplate6-centos6.ps1 -build 3.15.0-b296 -ver virt
 
 3. Then a Folder named by "ovfDir" will be created under the same path as pwshell scripts::
+
     [root@JMETER ovfDir]# tree -A
     .
     +-- COStmp3.14.2-b19virt
@@ -64,6 +64,7 @@ Setting/Execution
         +-- COStmp4.1.0-b43virt.ovf 
 
 4. Specify the VM candidate path in the config.yaml:: 
+
     vCenter: 10.94.193.186
     vUser: root
     vPasswd: Vmware123!
@@ -81,5 +82,10 @@ Setting/Execution
 
 
 5. Execute the Scale Auto Scripts::
+
     python vmAutoScale.py -f config.yaml
     
+
+    
+
+
