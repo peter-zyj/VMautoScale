@@ -1,0 +1,16 @@
+vCenter: 10.94.193.186
+vUser: root
+vPasswd: Vmware123!
+UCS: 10.94.153.80,10.94.153.81,10.94.153.82
+uUser: root
+uPasswd: rootroot
+ovf: /root/yijun/pwshell/COStemplate/ovfDir/COStmp3.15.0-b296virt/COStmp3.15.0-b296virt.ovf
+#ovf: /root/yijun/pwshell/COStemplate/ovfDir/COStmp3.14.2-b19virt/COStmp3.14.2-b19virt.ovf
+#ovf: /root/yijun/pwshell/ovf/Yijun_TP_perfect.ovf
+range: 1-60
+limit: 30
+crashFile: ./crashFile_94_244
+dsprefix: hulk
+vmprefix: Lindon1
+dcName: LindonScaleCOS
+cloneSource:
