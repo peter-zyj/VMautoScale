@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 =====
 Usage
 =====
@@ -89,3 +90,11 @@ Setting/Execution
     
 
 
+=======
+========
+Required
+========
+VMware vSphere API Python Bindings
+installation::
+    pip install pyvmomi
+>>>>>>> origin/master
